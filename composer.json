@@ -1,0 +1,25 @@
+{
+  "name": "dynmobile/prayer_times_calculator",
+  "description": "php7 Prayer times calculator adapted from http://praytimes.org/.",
+  "minimum-stability": "stable",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "sofian",
+      "email": "prayer.times.calculator@dynmobile.fr"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "PTCalculator\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.2",
+    "symfony/options-resolver": "^4.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "7",
+    "symfony/var-dumper": "^4.1"
+  }
+}
