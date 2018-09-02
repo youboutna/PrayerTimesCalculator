@@ -21,11 +21,9 @@ composer install
 ```php
 require_once __DIR__ . '/vendor/autoload.php';
 
-try {
-    $toulouse_PrTbuilder = new ToulousePrayerTimesBuilder();
-} catch (Exception $e) {
-//todo catch error
-}
+//get builder
+$toulouse_PrTbuilder = new ToulousePrayerTimesBuilder();
+
 //get PrayerTimesFactory
 $factory = new PrayerTimesFactory($toulouse_PrTbuilder);
 
